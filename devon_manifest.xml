@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+   <!-- Remote -->
+   
+  <remote  name="Ashr1th"
+        fetch="https://github.com/Ashr1th" />
+
+   <remote  name="LineageOS"
+        fetch="https://github.com/LineageOS" />
+
+<remote  name="TheMuppets"
+        fetch="https://github.com/TheMuppets" />
+
+   <!-- Device Trees -->
+   <project path="device/motorola/devon" name="android_device_motorola_devon" revision="lunaris" remote="Ashr1th" clone-depth="1"/>
+   <project path="device/motorola/sm6225-common" name="android_device_motorola_sm6225-common" remote="LineageOS" revision="lineage-23.2" clone-depth="1"/>
+
+   <!-- Kernel Source -->
+   <project path="kernel/motorola/sm6225" name="android_kernel_motorola_sm6225" revision="lineage-23.2" remote="LineageOS" clone-depth="1"/>
+
+   <!-- Vendor Blobs -->
+   <project path="vendor/motorola/sm6225-common" name="proprietary_vendor_motorola_sm6225-common" revision="lineage-23.2" remote="TheMuppets" clone-depth="1"/>
+   <project path="vendor/motorola/devon" name="proprietary_vendor_motorola_devon" revision="lineage-23.2" remote="TheMuppets" clone-depth="1"/>
+
+   <!-- Hardware -->
+   <project path="hardware/motorola" name="android_hardware_motorola" revision="lineage-23.2" remote="LineageOS" clone-depth="1"/>
+
+</manifest>
