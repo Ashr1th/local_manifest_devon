@@ -1,29 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-   <!-- Remote -->
-   
-  <remote  name="Ashr1th"
-        fetch="https://github.com/Ashr1th" />
+  <project name="noah5000/android_device_motorola_devon_professor"
+           path="device/motorola/devon"
+           remote="github"
+           revision="lunaris" />
 
-   <remote  name="LineageOS"
-        fetch="https://github.com/LineageOS" />
+  <project name="noah5000/android_device_motorola_sm6225-common"
+           path="device/motorola/sm6225-common"
+           remote="github"
+           revision="lineage-23.2" />
 
-<remote  name="TheMuppets"
-        fetch="https://github.com/TheMuppets" />
+  <project name="TheMuppets/proprietary_vendor_motorola_sm6225-common"
+           path="vendor/motorola/sm6225-common"
+           remote="github"
+           revision="lineage-23.2" />
 
-   <!-- Device Trees -->
-   <project path="device/motorola/devon" name="android_device_motorola_devon" revision="lunaris" remote="Ashr1th" clone-depth="1"/>
-   <project path="device/motorola/sm6225-common" name="android_device_motorola_sm6225-common" remote="LineageOS" revision="lineage-23.2" clone-depth="1"/>
+  <project name="TheMuppets/proprietary_vendor_motorola_devon"
+           path="vendor/motorola/devon"
+           remote="github"
+           revision="lineage-23.2" />
 
-   <!-- Kernel Source -->
-   <project path="kernel/motorola/sm6225" name="android_kernel_motorola_sm6225" revision="lineage-23.2" remote="LineageOS" clone-depth="1"/>
+  <project name="Ashr1th/android_kernel_motorola_sm6225"
+           path="kernel/motorola/sm6225"
+           remote="github"
+           revision="luna_resukisu_sus" />
 
-   <!-- Vendor Blobs -->
-   <project path="vendor/motorola/sm6225-common" name="proprietary_vendor_motorola_sm6225-common" revision="lineage-23.2" remote="TheMuppets" clone-depth="1"/>
-   <project path="vendor/motorola/devon" name="proprietary_vendor_motorola_devon" revision="lineage-23.2" remote="TheMuppets" clone-depth="1"/>
-
-   <!-- Hardware -->
-   <project path="hardware/motorola" name="android_hardware_motorola" revision="lineage-23.2" remote="LineageOS" clone-depth="1"/>
-
+  <project name="noah5000/android_hardware_motorola"
+           path="hardware/motorola"
+           remote="github"
+           revision="alpha" />
+  
+  <project path="vendor/lunaris/dolby" 
+          name="tranQuila-Project/vendor_lunaris_dolby" 
+          remote="github" 
+          revision="main" />
 </manifest>
+
