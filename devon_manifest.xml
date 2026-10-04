@@ -23,8 +23,9 @@
 
   <project name="Ashr1th/android_kernel_motorola_sm6225"
            path="kernel/motorola/sm6225"
+	   submodules="true"
            remote="github"
-           revision="luna_resukisu_sus" />
+           revision="luna_resukisu_su" />
 
   <project name="noah5000/android_hardware_motorola"
            path="hardware/motorola"
