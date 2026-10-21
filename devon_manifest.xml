@@ -26,8 +26,9 @@
 
   <project name="Ashr1th/android_kernel_motorola_sm6225"
            path="kernel/motorola/sm6225"
+           submodules="true"
            remote="github"
-           revision="ksun_sus" />
+           revision="ksu_nomount" />
 
   <project name="LineageOS/android_hardware_motorola"
            path="hardware/motorola"
